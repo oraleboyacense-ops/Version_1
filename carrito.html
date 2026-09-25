@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito | Órale Boyacá</title>
+
+
+    <!-- TIPOGRAFÍAS -->
+
+    <!-- Titulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Subtitulo -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Rye&display=swap" rel="stylesheet">
+     
+    <!-- Descripción -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="/css/style.css">
+
+    <!--LOGO-->
+    <link rel="icon" type="image/jpg" href="img/logo.jpg">
+
+</head>
+</head>
+
+
+<body>
+
+
+    <!-- ================================= -->
+    <!--              NAVBAR               -->
+    <!-- ================================= -->
+
+    <header class="navbar">
+
+
+        <a href="index.html"
+            class="logo">
+
+            <img src="img/logo.jpg"
+                alt="Logo Órale Boyacá">
+
+        </a>
+
+
+        <nav class="menu">
+
+
+            <a href="index.html">
+
+                INICIO
+
+            </a>
+
+
+            <a href="promociones.html">
+
+                PROMOCIONES
+
+            </a>
+
+
+            <a href="acercade.html">
+
+                ACERCA DE
+
+            </a>
+
+
+            <a href="ubicacion.html">
+
+                UBICACIÓN
+
+            </a>
+
+
+        </nav>
+
+
+        <a href="carrito.html"
+            class="icono-carrito">
+            
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">
+
+                0
+
+            </span>
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- ================================= -->
+    <!--          PÁGINA CARRITO           -->
+    <!-- ================================= -->
+
+    <main class="pagina-carrito">
+
+
+        <div class="contenedor-carrito">
+
+
+            <section class="seccion-mi-carrito">
+
+
+                <div class="titulo-carrito">
+
+                    <h1 class="Titulo">
+
+                        MI CARRITO
+
+                    </h1>
+
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </div>
+
+
+                <!-- PRODUCTOS -->
+
+                <div id="productos-carrito">
+
+                    <!-- JavaScript agrega los productos aquí -->
+
+                </div>
+
+
+                <!-- CARRITO VACÍO -->
+
+                <div id="carrito-vacio"
+                    class="carrito-vacio">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <h2 class="Titulo">
+
+                        TU CARRITO ESTÁ VACÍO
+
+                    </h2>
+
+
+                    <p class="Descripción">
+
+                        Agrega algunos productos para realizar tu pedido.
+
+                    </p>
+
+
+                    <a href="productos.html"
+                        class="boton-seguir-comprando">
+
+                        <i class="fa-solid fa-utensils"></i>
+
+                        VER PRODUCTOS
+
+                    </a>
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div class="total-carrito">
+
+                    <span class="Subtitulo">
+
+                        TOTAL
+
+                    </span>
+
+
+                    <strong id="total-carrito">
+
+                        $0
+
+                    </strong>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ================================= -->
+            <!--         DATOS DEL PEDIDO          -->
+            <!-- ================================= -->
+
+            <section class="datos-pedido">
+
+
+                <div class="titulo-datos">
+
+                    <i class="fa-solid fa-clipboard-list"></i>
+
+                    <h2 class="Titulo">
+
+                        DATOS PARA EL PEDIDO
+
+                    </h2>
+
+                </div>
+
+
+                <p class="Descripción">
+
+                    Completa tus datos antes de enviar el pedido.
+
+                </p>
+
+
+                <!-- NOMBRE -->
+
+                <div class="grupo-input">
+
+
+                    <label for="nombre">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        NOMBRE COMPLETO
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Escribe tu nombre">
+
+
+                </div>
+
+
+
+                <!-- UBICACIÓN -->
+
+                <div class="grupo-input">
+
+
+                    <label for="ubicacion">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        UBICACIÓN O DIRECCIÓN
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="ubicacion"
+                        placeholder="Escribe tu dirección">
+
+
+                </div>
+
+
+
+                <!-- TELÉFONO -->
+
+                <div class="grupo-input">
+
+
+                    <label for="telefono">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        TELÉFONO / WHATSAPP
+
+                    </label>
+
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="Escribe tu número">
+
+
+                </div>
+
+
+
+                <!-- BOTÓN -->
+
+                <button id="enviar-whatsapp"
+                    class="boton-whatsapp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    PEDIR POR WHATSAPP
+
+                </button>
+
+                <p class="mensaje-terminos">
+
+                    Al enviar tu pedido aceptas nuestros términos y condiciones.
+
+                </p>
+
+
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- MENSAJE -->
+
+    <div id="notificacion"
+        class="notificacion">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span></span>
+
+    </div>
+
+    <!-- ================================= -->
+    <!--              REDES                -->
+    <!-- ================================= -->
+
+    <section class="redes">
+
+
+        <p class="Subtitulo">
+
+            SÍGUENOS EN NUESTRAS REDES
+
+        </p>
+
+
+        <div class="iconos-redes">
+
+
+            <a href="https://www.instagram.com/orale.boyaca?igsi=MWgzMTN6MGYzMTVwOA=="
+                aria-label="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <a href="https://wa.me/c/573143683987"
+                aria-label="WhatsApp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+
+            <a href="https://www.facebook.com/share/1c4xvZRHbF/"
+                aria-label="Facebook">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://www.tiktok.com/@rale.boyac?_r=1&_t=ZS-990EOIFW05Y">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+    <script src="/js/script.js"></script>
+
+
+</body>
+
+</html>

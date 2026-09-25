@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | Órale Boyacá</title>
+
+
+    <!-- TIPOGRAFÍAS -->
+
+    <!-- Titulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Subtitulo -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Rye&display=swap" rel="stylesheet">
+     
+    <!-- Descripción -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="/css/style.css">
+
+    <!--LOGO-->
+    <link rel="icon" type="image/jpg" href="img/logo.jpg">
+
+</head>
+
+</head>
+
+
+<body>
+
+
+    <!-- ============================== -->
+    <!--            NAVBAR              -->
+    <!-- ============================== -->
+
+    <header class="navbar">
+
+
+        <a href="index.html"
+            class="logo">
+
+            <img src="img/logo.jpg"
+                alt="Logo Órale Boyacá">
+
+        </a>
+
+
+        <nav class="menu">
+
+            <a href="index.html">
+                INICIO
+            </a>
+
+
+            <a href="promociones.html">
+                PROMOCIONES
+            </a>
+
+
+            <a href="acercade.html">
+                ACERCA DE
+            </a>
+
+
+            <a href="ubicacion.html">
+                UBICACIÓN
+            </a>
+
+        </nav>
+
+
+        <!-- CARRITO -->
+
+        <a href="carrito.html"
+            class="icono-carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">
+                0
+            </span>
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- ============================== -->
+    <!--         ENCABEZADO             -->
+    <!-- ============================== -->
+
+    <section class="productos-encabezado">
+
+
+        <span class="etiqueta-productos">
+
+            SABOR MEXICANO CON CORAZÓN BOYACENSE
+
+        </span>
+
+
+        <h1 class="Titulo">
+
+            NUESTROS PRODUCTOS
+
+        </h1>
+
+
+        <p class="Descripción">
+
+            Conoce todos los sabores que tenemos preparados
+            para ti. ¡Órale, prueba algo diferente!
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- ============================== -->
+    <!--        LISTA PRODUCTOS         -->
+    <!-- ============================== -->
+
+    <main class="pagina-productos">
+
+
+        <div class="productos-grid">
+
+
+            <!-- TACOS -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="img/tacos.jpg"
+                        alt="Tacos">
+
+                    <span class="producto-precio">
+
+                        $14.900
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        TACOS
+
+                    </h2>
+
+
+                    <p>
+
+                        Una explosión de sabor con nuestro
+                        toque especial de Órale Boyacá.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Tacos"
+                        data-precio="14900"
+                        data-imagen="img/tacos.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- AGUA DE JAMAICA -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="/img/agua de jamaica.jpg"
+                        alt="Agua de Jamaica">
+
+                    <span class="producto-precio">
+
+                        $5.000
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        AGUA DE JAMAICA
+
+                    </h2>
+
+
+                    <p>
+
+                        Una bebida refrescante y llena
+                        de sabor.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Agua de Jamaica"
+                        data-precio="5000"
+                        data-imagen="img/agua de jamaica.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- DORILOCOS -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="img/doriloco.jpg"
+                        alt="Dorilocos">
+
+                    <span class="producto-precio">
+
+                        $28.900
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        DORILOCOS
+
+                    </h2>
+
+
+                    <p>
+
+                        Una combinación cargada de sabor,
+                        ingredientes y mucha actitud.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Dorilocos"
+                        data-precio="28900"
+                        data-imagen="img/doriloco.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PEPINO LOCO -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="img/pepino loco.jpg"
+                        alt="Pepino Loco">
+
+                    <span class="producto-precio">
+
+                        $12.500
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        PEPINO LOCO
+
+                    </h2>
+
+
+                    <p>
+
+                        Fresco, diferente y preparado
+                        con el toque loco de Órale.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Pepino Loco"
+                        data-precio="12500"
+                        data-imagen="img/pepino loco.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- AREPA RELLENA -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="img/arepa rellena.jpg"
+                        alt="Arepa Rellena">
+
+                    <span class="producto-precio">
+
+                        $24.900
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        AREPA RELLENA
+
+                    </h2>
+
+
+                    <p>
+
+                        El sabor de Boyacá combinado con
+                        una preparación diferente y deliciosa.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Arepa Rellena"
+                        data-precio="24900"
+                        data-imagen="img/arepa rellena.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- TOSTADAS -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="img/tostadas.jpg"
+                        alt="Tostadas">
+
+                    <span class="producto-precio">
+
+                        $3.000
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        TOSTADAS
+
+                    </h2>
+
+
+                    <p>
+
+                        Crujientes, deliciosas y perfectas
+                        para disfrutar en cualquier momento.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Tostadas"
+                        data-precio="3000"
+                        data-imagen="img/tostadas.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- AGUA DE HORCHATA -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="img/agua de horchata.jpg"
+                        alt="Agua de Horchata">
+
+                    <span class="producto-precio">
+
+                        $7.000
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        AGUA DE HORCHATA
+
+                    </h2>
+
+
+                    <p>
+
+                        Una bebida cremosa, refrescante
+                        y llena de sabor.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Agua de Horchata"
+                        data-precio="7000"
+                        data-imagen="img/agua de horchata.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+                    <!-- AROS MEXICANITOS -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="img/aros mexicanitos.jpg"
+                        alt="Aro mexicanitos">
+
+                    <span class="producto-precio">
+
+                        $3.000
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        AROS MEXICANITOS
+
+                    </h2>
+
+
+                    <p>
+
+                        Una bebida cremosa, refrescante
+                        y llena de sabor.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Aros Mexicanitos"
+                        data-precio="3000"
+                        data-imagen="img/aros mexicanitos.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+                    <!-- MICHELADA -->
+
+            <article class="producto-card">
+
+
+                <div class="producto-imagen">
+
+                    <img src="img/micheladas.jpg"
+                        alt="Michelada">
+
+                    <span class="producto-precio">
+
+                        $14.500
+
+                    </span>
+
+                </div>
+
+
+                <div class="producto-contenido">
+
+                    <h2>
+
+                        MICHELADA
+
+                    </h2>
+
+
+                    <p>
+
+                        Una bebida cremosa, refrescante
+                        y llena de sabor.
+
+                    </p>
+
+
+                    <button class="agregar-carrito"
+                        data-producto="Micheladass"
+                        data-precio="14500"
+                        data-imagen="img/micheladas.jpg">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+
+        <!-- BOTÓN PROMOCIONES -->
+
+        <div class="productos-final">
+
+            <h2 class="Titulo">
+
+                ¿QUIERES ALGO MÁS?
+
+            </h2>
+
+
+            <p class="Descripción">
+
+                También tenemos promociones y combos especiales.
+
+            </p>
+
+
+            <a href="promociones.html"
+                class="boton-ver-promociones">
+
+                <i class="fa-solid fa-tags"></i>
+
+                VER PROMOCIONES
+
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- NOTIFICACIÓN -->
+
+    <div id="notificacion"
+        class="notificacion">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span></span>
+
+    </div>
+
+    <!-- ================================= -->
+    <!--              REDES                -->
+    <!-- ================================= -->
+
+    <section class="redes">
+
+
+        <p class="Subtitulo">
+
+            SÍGUENOS EN NUESTRAS REDES
+
+        </p>
+
+
+        <div class="iconos-redes">
+
+
+            <a href="https://www.instagram.com/orale.boyaca?igsi=MWgzMTN6MGYzMTVwOA=="
+                aria-label="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <a href="https://wa.me/c/573143683987"
+                aria-label="WhatsApp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+
+            <a href="https://www.facebook.com/share/1c4xvZRHbF/"
+                aria-label="Facebook">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://www.tiktok.com/@rale.boyac?_r=1&_t=ZS-990EOIFW05Y">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+    <script src="/js/script.js"></script>
+
+
+</body>
+
+</html>

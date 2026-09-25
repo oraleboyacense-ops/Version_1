@@ -1,0 +1,3213 @@
+/* ================================= */
+/*           CONFIGURACIÓN           */
+/* ================================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background-color: #f6f1e8;
+
+    color: #222;
+
+    overflow-x: hidden;
+
+}
+
+
+
+/* ================================= */
+/*           TIPOGRAFÍAS             */
+/* ================================= */
+
+.Titulo {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.Subtitulo {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}  
+
+
+.Descripción  {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}  
+
+
+/* ================================= */
+/*              NAVBAR               */
+/* ================================= */
+
+.navbar {
+
+    width: 100%;
+    height: 85px;
+
+    background-color: #f8f3ea;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 2px solid #c52b20;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+
+.logo img {
+
+    width: 105px;
+
+    display: block;
+
+}
+
+
+
+/* MENÚ */
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+.menu a {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    color: #202020;
+
+    transition: 0.3s;
+
+}
+
+
+.menu a:hover {
+
+    color: #c52b20;
+
+}
+
+
+.menu .activo {
+
+    color: #c52b20;
+
+}
+
+
+
+/* CARRITO */
+
+.icono-carrito {
+
+    position: relative;
+
+    color: #202020;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.icono-carrito:hover {
+
+    color: #c52b20;
+
+}
+
+
+.icono-carrito span {
+
+    position: absolute;
+
+    top: -12px;
+
+    right: -15px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #c52b20;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+/* ================================= */
+/*              BANNER               */
+/* ================================= */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+/* ================================= */
+/*        IMAGEN DEL BANNER          */
+/* ================================= */
+
+.banner-imagen {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
+
+
+/* ================================= */
+/*          BOTÓN DEL BANNER         */
+/* ================================= */
+
+.banner-boton {
+    position: absolute;
+    left: 8%;
+    bottom: 10%;
+    z-index: 2;
+    max-width: 84%;
+    line-height: normal;
+}
+
+
+/* ================================= */
+/*          BOTÓN PRINCIPAL          */
+/* ================================= */
+
+.banner-boton .boton-principal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f5b400;
+    color: #171717;
+
+    padding: 13px 24px;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-family: "Rye", sans-serif;
+    font-size: 16px;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+
+/* ================================= */
+/*              HOVER                */
+/* ================================= */
+
+.banner-boton .boton-principal:hover {
+    transform: scale(1.05);
+    background-color: #ffffff;
+}
+
+
+/* ================================= */
+/*              TABLET              */
+/* ================================= */
+
+@media (max-width: 900px) {
+
+    .banner-boton {
+        left: 6%;
+        bottom: 8%;
+        max-width: 88%;
+    }
+
+    .banner-boton .boton-principal {
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+}
+
+
+/* ================================= */
+/*              CELULAR             */
+/* ================================= */
+
+@media (max-width: 600px) {
+
+    .banner-boton {
+        left: 5%;
+        bottom: 7%;
+        max-width: 90%;
+    }
+
+    .banner-boton .boton-principal {
+        padding: 9px 14px;
+        font-size: 11px;
+        gap: 6px;
+    }
+}
+
+/* ================================= */
+/*          QUIÉNES SOMOS            */
+/* ================================= */
+
+.quienes-somos {
+
+    background-color: #f8f3ea;
+
+    padding: 80px 10%;
+
+}
+
+
+.contenedor-quienes {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+
+.quienes-texto h2 {
+
+    font-size: 38px;
+
+    color: #245638;
+
+    margin-bottom: 25px;
+
+}
+
+
+.quienes-texto p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    font-weight: 400;
+
+}
+
+
+.quienes-imagen img {
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 8px;
+
+    box-shadow: 10px 10px 0 #c52b20;
+
+}
+
+
+
+/* BOTÓN SECUNDARIO */
+
+.boton-secundario {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 24px;
+
+    background-color: transparent;
+
+    border: 2px solid #245638;
+
+    color: #245638;
+
+    text-decoration: none;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-secundario:hover {
+
+    background-color: #245638;
+
+    color: white;
+
+}
+
+
+
+/* ================================= */
+/*       PRODUCTOS DESTACADOS        */
+/* ================================= */
+
+.productos {
+
+    background-color: #fffaf2;
+
+    padding: 70px 8% 80px;
+
+    text-align: center;
+
+}
+
+
+.productos h2 {
+
+    font-size: 40px;
+
+    color: #245638;
+
+    margin-bottom: 40px;
+
+}
+
+
+.productos-contenedor {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+
+/* TARJETA */
+
+.producto {
+
+    background-color: #ffffff;
+
+    border: 1px solid #ded7cc;
+
+    border-radius: 8px;
+
+    padding-bottom: 20px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+}
+
+
+.producto:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+
+}
+
+
+.producto-imagen {
+
+    width: 100%;
+
+    height: 190px;
+
+    overflow: hidden;
+
+}
+
+
+.producto-imagen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+
+}
+
+
+.producto:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+.producto h3 {
+
+    margin-top: 18px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+}
+
+
+.precio {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #c52b20;
+
+    margin: 8px 0 15px;
+
+}
+
+
+
+/* BOTÓN AGREGAR */
+
+.agregar-carrito {
+
+    background-color: #f5b400;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 4px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.agregar-carrito i {
+
+    margin-right: 5px;
+
+}
+
+
+.agregar-carrito:hover {
+
+    background-color: #245638;
+
+    color: white;
+
+}
+
+
+
+/* ================================= */
+/*              RESEÑAS              */
+/* ================================= */
+
+.resenas {
+
+    background-color: #16472e;
+
+    padding: 75px 10%;
+
+    text-align: center;
+
+}
+
+
+.resenas h2 {
+
+    color: #f5b400;
+
+    font-size: 38px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.resenas-contenedor {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.resena {
+
+    background-color: #f8f3ea;
+
+    padding: 30px 25px;
+
+    border-radius: 8px;
+
+    min-height: 210px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.estrellas {
+
+    color: #f5b400;
+
+    margin-bottom: 18px;
+
+}
+
+
+.resena p {
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    font-weight: 400;
+
+}
+
+
+.resena span {
+
+    margin-top: 20px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+    color: #c52b20;
+
+}
+
+
+
+/* ================================= */
+/*               REDES               */
+/* ================================= */
+
+.redes {
+
+    background-color: #f5b400;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+.redes p {
+
+    font-size: 20px;
+
+    color: #202020;
+
+    margin-bottom: 15px;
+
+}
+
+
+.iconos-redes {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+
+.iconos-redes a {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #202020;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    transition: 0.3s;
+
+}
+
+
+.iconos-redes a:hover {
+
+    transform: translateY(-5px);
+
+    color: #c52b20;
+
+}
+
+
+
+/* ================================= */
+/*             RESPONSIVE            */
+/* ================================= */
+
+@media (max-width: 900px) {
+
+
+    .navbar {
+
+        padding: 0 4%;
+
+    }
+
+
+    .menu {
+
+        gap: 15px;
+
+    }
+
+
+    .menu a {
+
+        font-size: 10px;
+
+    }
+
+
+    .contenedor-quienes {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .productos-contenedor {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .resenas-contenedor {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+
+    .navbar {
+
+        height: auto;
+
+        padding: 15px;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+    }
+
+
+    .logo img {
+
+        width: 85px;
+
+    }
+
+
+    .menu {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: space-between;
+
+    }
+
+
+    .menu a {
+
+        font-size: 9px;
+
+    }
+
+
+    .banner {
+
+        min-height: 500px;
+
+        background-position: 65% center;
+
+    }
+
+
+    .banner-contenido {
+
+        width: 90%;
+
+    }
+
+
+    .banner-texto p {
+
+        font-size: 17px;
+
+    }
+
+
+    .productos-contenedor {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .quienes-somos {
+
+        padding: 60px 7%;
+
+    }
+
+
+}
+/* ================================= */
+/*          PROMOCIONES              */
+/* ================================= */
+
+
+/* ENCABEZADO */
+
+.encabezado-promociones {
+
+    min-height: 220px;
+
+    background-color: #f8f3ea;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    text-align: center;
+
+    padding: 50px 20px 30px;
+
+}
+
+
+.titulo-promociones h1 {
+
+    font-size: clamp(38px, 5vw, 60px);
+
+    color: #c52b20;
+
+    margin-bottom: 10px;
+
+}
+
+
+.titulo-promociones p {
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    color: #333;
+
+}
+
+
+.decoracion {
+
+    color: #f5b400;
+
+    font-size: 25px;
+
+}
+
+
+
+/* ================================= */
+/*       SECCIÓN PROMOCIONES         */
+/* ================================= */
+
+.seccion-promociones {
+
+    background-color: #f8f3ea;
+
+    padding: 20px 8% 80px;
+
+}
+
+
+.grid-promociones {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+/* ================================= */
+/*        TARJETA PROMOCIÓN          */
+/* ================================= */
+
+.tarjeta-promo {
+
+    min-height: 340px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: stretch;
+
+    background-color: #222;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    transition: 0.35s;
+
+}
+
+
+.tarjeta-promo:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+/* IMAGEN */
+
+.tarjeta-promo img {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 1;
+
+    transition: 0.5s;
+
+}
+
+
+.tarjeta-promo:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+
+/* CAPA OSCURA SOBRE LA IMAGEN */
+
+.tarjeta-promo::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.88) 0%,
+            rgba(0, 0, 0, 0.65) 48%,
+            rgba(0, 0, 0, 0.15) 100%
+        );
+
+}
+
+
+
+/* CONTENIDO */
+
+.contenido-promo {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 65%;
+
+    padding: 35px;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+}
+
+
+.etiqueta-promo {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    background-color: #f5b400;
+
+    color: #202020;
+
+    padding: 6px 10px;
+
+    border-radius: 3px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.contenido-promo h2 {
+
+    font-size: clamp(30px, 3vw, 45px);
+
+    line-height: 0.95;
+
+    margin-bottom: 12px;
+
+}
+
+
+.contenido-promo p {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+
+    font-weight: 400;
+
+}
+
+
+
+/* PRECIO DESTACADO */
+
+.precio-destacado {
+
+    font-family: "Ranchers", sans-serif;
+
+    color: #f5b400;
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+
+}
+
+
+.precio-normal {
+
+    font-size: 38px;
+
+}
+
+
+
+/* BOTÓN */
+
+.boton-promo {
+
+    margin-top: auto;
+
+    background-color: #f5b400;
+
+    color: #202020;
+
+    border: none;
+
+    padding: 12px 16px;
+
+    border-radius: 5px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-promo i {
+
+    margin-right: 6px;
+
+}
+
+
+.boton-promo:hover {
+
+    background-color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* ================================= */
+/*       ESTILOS POR PROMOCIÓN       */
+/* ================================= */
+
+
+/* TARJETA TACOS */
+
+.promo-tacos {
+
+    border-left: 5px solid #c52b20;
+
+}
+
+
+/* TARJETA COMBO */
+
+.promo-combo {
+
+    border-left: 5px solid #245638;
+
+}
+
+
+.promo-combo .etiqueta-promo {
+
+    background-color: #245638;
+
+    color: white;
+
+}
+
+
+.promo-combo .precio-destacado {
+
+    color: #f5b400;
+
+}
+
+
+/* HORA LOCA */
+
+.promo-hora {
+
+    border-left: 5px solid #f5b400;
+
+}
+
+
+/* AREPA */
+
+.promo-arepa {
+
+    border-left: 5px solid #c52b20;
+
+}
+
+
+
+/* ================================= */
+/*        MENSAJE PROMOCIONES        */
+/* ================================= */
+
+.mensaje-promociones {
+
+    background-color: #16472e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+
+}
+
+
+.mensaje-promociones i {
+
+    font-size: 32px;
+
+    color: #f5b400;
+
+    margin-bottom: 10px;
+
+}
+
+
+.mensaje-promociones p {
+
+    font-size: 35px;
+
+    color: #f5b400;
+
+    margin-bottom: 10px;
+
+}
+
+
+.mensaje-promociones span {
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+}
+
+
+
+/* ================================= */
+/*             RESPONSIVE            */
+/* ================================= */
+
+@media (max-width: 850px) {
+
+
+    .grid-promociones {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .encabezado-promociones {
+
+        min-height: 180px;
+
+        gap: 12px;
+
+    }
+
+
+    .decoracion {
+
+        font-size: 18px;
+
+    }
+
+
+    .titulo-promociones h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .titulo-promociones p {
+
+        font-size: 14px;
+
+    }
+
+
+    .seccion-promociones {
+
+        padding: 20px 5% 60px;
+
+    }
+
+
+    .tarjeta-promo {
+
+        min-height: 400px;
+
+    }
+
+
+    .contenido-promo {
+
+        width: 90%;
+
+        padding: 25px;
+
+    }
+
+
+    .contenido-promo h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .precio-destacado {
+
+        font-size: 50px;
+
+    }
+
+
+}
+/* ================================= */
+/*          ACERCA DE NOSOTROS       */
+/* ================================= */
+
+
+/* ================================= */
+/*          NUESTRA HISTORIA         */
+/* ================================= */
+
+.acerca-historia {
+
+    background-color: #f8f3ea;
+
+    padding: 80px 10%;
+
+}
+
+
+.contenedor-historia {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+
+/* IMAGEN */
+
+.historia-imagen {
+
+    position: relative;
+
+}
+
+
+.historia-imagen img {
+
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 8px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* DETALLE DECORATIVO */
+
+.historia-imagen::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #c52b20;
+
+    top: 18px;
+
+    left: -18px;
+
+    border-radius: 8px;
+
+    z-index: 1;
+
+}
+
+
+/* ================================= */
+/*          TEXTO HISTORIA           */
+/* ================================= */
+
+.historia-texto {
+
+    padding: 20px 0;
+
+}
+
+
+.etiqueta-acerca {
+
+    display: inline-block;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    background-color: #f5b400;
+
+    color: #202020;
+
+    padding: 7px 12px;
+
+    border-radius: 4px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.historia-texto h1 {
+
+    font-size: clamp(40px, 5vw, 58px);
+
+    color: #245638;
+
+    margin-bottom: 25px;
+
+}
+
+
+.historia-texto p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    font-weight: 400;
+
+}
+
+
+
+/* ================================= */
+/*          MISIÓN Y VISIÓN          */
+/* ================================= */
+
+.mision-vision {
+
+    background-color: #fffaf2;
+
+    padding: 30px 10% 80px;
+
+}
+
+
+.contenedor-mision-vision {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+.tarjeta-mision {
+
+    background-color: #f8f3ea;
+
+    border: 1px solid #ded7cc;
+
+    border-radius: 8px;
+
+    padding: 35px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    transition: 0.3s;
+
+}
+
+
+.tarjeta-mision:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.icono-mision {
+
+    min-width: 60px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border: 2px solid #245638;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #c52b20;
+
+    font-size: 25px;
+
+}
+
+
+.tarjeta-mision h2 {
+
+    color: #245638;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.tarjeta-mision p {
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    font-weight: 400;
+
+}
+
+
+
+/* ================================= */
+/*          NUESTRO EQUIPO           */
+/* ================================= */
+
+.equipo {
+
+    background-color: #16472e;
+
+    padding: 80px 10%;
+
+    text-align: center;
+
+}
+
+
+.equipo > h2 {
+
+    color: #f5b400;
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.equipo-subtitulo {
+
+    color: white;
+
+    font-size: 16px;
+
+    margin-bottom: 45px;
+
+    font-weight: 400;
+
+}
+
+
+.equipo-contenedor {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+/* TARJETA DEL MIEMBRO */
+
+.miembro-equipo {
+
+    background-color: #f8f3ea;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    transition: 0.3s;
+
+}
+
+
+.miembro-equipo:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.foto-miembro {
+
+    width: 100%;
+
+    height: 280px;
+
+    overflow: hidden;
+
+}
+
+
+.foto-miembro img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+
+}
+
+
+.miembro-equipo:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+.info-miembro {
+
+    padding: 20px;
+
+}
+
+
+.info-miembro h3 {
+
+    color: #245638;
+
+    font-size: 27px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.cargo {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #c52b20;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+
+/* ================================= */
+/*        RESPONSIVE ACERCA DE       */
+/* ================================= */
+
+@media (max-width: 900px) {
+
+
+    .contenedor-historia {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .contenedor-mision-vision {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+
+@media (max-width: 700px) {
+
+
+    .equipo-contenedor {
+
+        grid-template-columns: 1fr;
+
+        max-width: 400px;
+
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .acerca-historia {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .historia-imagen img {
+
+        height: 300px;
+
+    }
+
+
+    .historia-imagen::before {
+
+        top: 12px;
+
+        left: -12px;
+
+    }
+
+
+    .tarjeta-mision {
+
+        flex-direction: column;
+
+        padding: 25px;
+
+    }
+
+
+    .equipo {
+
+        padding: 60px 7%;
+
+    }
+
+
+}
+
+/* ================================= */
+/*            UBICACIÓN              */
+/* ================================= */
+
+.ubicacion {
+
+    width: 100%;
+
+    padding: 70px 6%;
+
+    background-color: #f8f3e8;
+
+}
+
+
+.ubicacion-contenedor {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        0.8fr 1.2fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+}
+
+
+/* ================================= */
+/*        INFORMACIÓN                */
+/* ================================= */
+
+.ubicacion-info {
+
+    padding: 20px;
+
+}
+
+
+.ubicacion-info h1 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.ubicacion-info > p {
+
+    margin-bottom: 30px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ================================= */
+/*          DATOS                    */
+/* ================================= */
+
+.dato-ubicacion {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.dato-ubicacion > i {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #27733c;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+}
+
+
+.dato-ubicacion strong {
+
+    font-family: "Ranchers", sans-serif;
+
+    font-weight: 400;
+
+}
+
+
+.dato-ubicacion p {
+
+    margin: 4px 0 0;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+/* ================================= */
+/*          BOTONES                  */
+/* ================================= */
+
+.botones-ubicacion {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+/* ================================= */
+/*       BOTÓN DEBAJO DEL MAPA       */
+/* ================================= */
+
+.boton-mapa {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 15px;
+
+}
+
+
+.boton-mapa a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 13px 25px;
+
+    background-color: #27733c;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-family: "Ranchers", sans-serif;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.boton-mapa a:hover {
+
+    background-color: #1f5d31;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.15);
+
+}
+
+
+/* ================================= */
+/*             MAPA                  */
+/* ================================= */
+
+.ubicacion-mapa {
+
+    width: 100%;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    border: 3px solid #27733c;
+
+}
+
+
+.ubicacion-mapa iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 0;
+
+}
+
+
+/* ================================= */
+/*          RESPONSIVE               */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    .ubicacion-contenedor {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .ubicacion-mapa {
+
+        height: 350px;
+
+    }
+
+
+    .botones-ubicacion {
+
+        flex-direction: column;
+
+    }
+
+}
+
+/* ================================= */
+/*         PÁGINA CARRITO            */
+/* ================================= */
+
+.pagina-carrito {
+
+    background-color: #f8f3ea;
+
+    min-height: 100vh;
+
+    padding: 70px 8%;
+
+}
+
+
+.contenedor-carrito {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.8fr;
+
+    gap: 40px;
+
+    align-items: start;
+
+}
+
+
+
+/* ================================= */
+/*          TÍTULO CARRITO           */
+/* ================================= */
+
+.titulo-carrito {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.titulo-carrito h1 {
+
+    color: #245638;
+
+    font-size: 48px;
+
+}
+
+
+.titulo-carrito i {
+
+    color: #c52b20;
+
+    font-size: 30px;
+
+}
+
+
+
+/* ================================= */
+/*       PRODUCTO DEL CARRITO        */
+/* ================================= */
+
+.producto-carrito {
+
+    background-color: white;
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        auto
+        auto
+        auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 18px;
+
+    margin-bottom: 12px;
+
+    border-bottom: 1px solid #ded7cc;
+
+}
+
+
+.producto-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.producto-info img {
+
+    width: 85px;
+
+    height: 70px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+}
+
+
+.producto-info h3 {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+
+    color: #202020;
+
+}
+
+
+.producto-info p {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    color: #666;
+
+}
+
+
+
+/* ================================= */
+/*            CANTIDAD               */
+/* ================================= */
+
+.cantidad-producto {
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ded7cc;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+}
+
+
+.boton-cantidad {
+
+    width: 32px;
+
+    height: 32px;
+
+    border: none;
+
+    background-color: #f8f3ea;
+
+    cursor: pointer;
+
+    color: #245638;
+
+}
+
+
+.boton-cantidad:hover {
+
+    background-color: #f5b400;
+
+}
+
+
+.cantidad-producto span {
+
+    width: 35px;
+
+    text-align: center;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.subtotal-producto {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #245638;
+
+}
+
+
+
+/* ELIMINAR */
+
+.eliminar-producto {
+
+    border: none;
+
+    background: none;
+
+    color: #c52b20;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.eliminar-producto:hover {
+
+    transform: scale(1.15);
+
+}
+
+
+
+/* ================================= */
+/*               TOTAL                */
+/* ================================= */
+
+.total-carrito {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background-color: #245638;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-radius: 6px;
+
+}
+
+
+.total-carrito span {
+
+    font-size: 25px;
+
+}
+
+
+.total-carrito strong {
+
+    font-family: "DM Sans", sans-serif;
+
+    color: #f5b400;
+
+    font-size: 24px;
+
+}
+
+
+
+/* ================================= */
+/*          CARRITO VACÍO            */
+/* ================================= */
+
+.carrito-vacio {
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background-color: white;
+
+}
+
+
+.carrito-vacio > i {
+
+    font-size: 45px;
+
+    color: #c52b20;
+
+    margin-bottom: 20px;
+
+}
+
+
+.carrito-vacio h2 {
+
+    color: #245638;
+
+    margin-bottom: 10px;
+
+}
+
+
+.carrito-vacio p {
+
+    margin-bottom: 25px;
+
+}
+
+
+.boton-seguir-comprando {
+
+    background-color: #f5b400;
+
+    color: #202020;
+
+    text-decoration: none;
+
+    padding: 13px 20px;
+
+    border-radius: 5px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.boton-seguir-comprando i {
+
+    margin-right: 7px;
+
+}
+
+
+
+/* ================================= */
+/*          DATOS DEL PEDIDO         */
+/* ================================= */
+
+.datos-pedido {
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 8px;
+
+    border-top: 5px solid #c52b20;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.titulo-datos {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.titulo-datos i {
+
+    color: #245638;
+
+    font-size: 25px;
+
+}
+
+
+.titulo-datos h2 {
+
+    color: #245638;
+
+    font-size: 27px;
+
+}
+
+
+.datos-pedido > p {
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* INPUTS */
+
+.grupo-input {
+
+    margin-bottom: 20px;
+
+}
+
+
+.grupo-input label {
+
+    display: block;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #245638;
+
+    margin-bottom: 8px;
+
+}
+
+
+.grupo-input label i {
+
+    color: #c52b20;
+
+    margin-right: 5px;
+
+}
+
+
+.grupo-input input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d8d1c6;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    font-family: "DM Sans", sans-serif;
+
+    box-sizing: border-box;
+
+}
+
+
+.grupo-input input:focus {
+
+    border-color: #245638;
+
+}
+
+
+
+/* ================================= */
+/*          BOTÓN WHATSAPP           */
+/* ================================= */
+
+.boton-whatsapp {
+
+    width: 100%;
+
+    background-color: #245638;
+
+    color: white;
+
+    border: none;
+
+    padding: 17px;
+
+    border-radius: 5px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-whatsapp i {
+
+    font-size: 20px;
+
+    margin-right: 8px;
+
+}
+
+
+.boton-whatsapp:hover {
+
+    background-color: #c52b20;
+
+    transform: translateY(-3px);
+
+}
+
+
+.mensaje-terminos {
+
+    text-align: center;
+
+    font-size: 10px !important;
+
+    color: #777;
+
+    margin-top: 18px;
+
+}
+
+
+
+/* ================================= */
+/*          NOTIFICACIÓN             */
+/* ================================= */
+
+.notificacion {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    background-color: #245638;
+
+    color: white;
+
+    padding: 15px 20px;
+
+    border-radius: 6px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    transform: translateY(120px);
+
+    opacity: 0;
+
+    transition: 0.4s;
+
+    z-index: 9999;
+
+}
+
+
+.notificacion i {
+
+    color: #f5b400;
+
+}
+
+
+.notificacion.mostrar {
+
+    transform: translateY(0);
+
+    opacity: 1;
+
+}
+
+
+
+/* ================================= */
+/*            RESPONSIVE             */
+/* ================================= */
+
+@media (max-width: 950px) {
+
+    .contenedor-carrito {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .pagina-carrito {
+
+        padding: 50px 5%;
+
+    }
+
+
+    .producto-carrito {
+
+        grid-template-columns: 1fr auto;
+
+        gap: 15px;
+
+    }
+
+
+    .producto-info {
+
+        grid-column: 1 / 3;
+
+    }
+
+
+    .subtotal-producto {
+
+        text-align: right;
+
+    }
+
+
+    .datos-pedido {
+
+        padding: 25px;
+
+    }
+
+}
+/* ================================= */
+/*         PÁGINA PRODUCTOS          */
+/* ================================= */
+
+.productos-encabezado {
+
+    background-color: #245638;
+
+    text-align: center;
+
+    padding: 75px 10%;
+
+    color: white;
+
+}
+
+
+.etiqueta-productos {
+
+    display: inline-block;
+
+    background-color: #f5b400;
+
+    color: #202020;
+
+    padding: 7px 14px;
+
+    border-radius: 4px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.productos-encabezado h1 {
+
+    color: white;
+
+    font-size: clamp(45px, 6vw, 70px);
+
+    margin-bottom: 15px;
+
+}
+
+
+.productos-encabezado p {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ================================= */
+/*          PRODUCTOS GRID           */
+/* ================================= */
+
+.pagina-productos {
+
+    background-color: #f8f3ea;
+
+    padding: 80px 10%;
+
+}
+
+
+.productos-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+/* ================================= */
+/*         TARJETA PRODUCTO          */
+/* ================================= */
+
+.producto-card {
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.producto-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.producto-imagen {
+
+    position: relative;
+
+    height: 230px;
+
+    overflow: hidden;
+
+}
+
+
+.producto-imagen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+
+}
+
+
+.producto-card:hover .producto-imagen img {
+
+    transform: scale(1.08);
+
+}
+
+
+.producto-precio {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    background-color: #f5b400;
+
+    color: #202020;
+
+    padding: 8px 12px;
+
+    border-radius: 4px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* ================================= */
+/*         CONTENIDO PRODUCTO        */
+/* ================================= */
+
+.producto-contenido {
+
+    padding: 25px;
+
+}
+
+
+.producto-contenido h2 {
+
+    font-family: "Ranchers", sans-serif;
+
+    font-size: 28px;
+
+    color: #245638;
+
+    margin-bottom: 10px;
+
+}
+
+
+.producto-contenido p {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+    min-height: 68px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.producto-contenido button {
+
+    width: 100%;
+
+    border: none;
+
+    background-color: #c52b20;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+}
+
+
+.producto-contenido button:hover {
+
+    background-color: #245638;
+
+    transform: translateY(-2px);
+
+}
+
+
+.producto-contenido button i {
+
+    margin-right: 7px;
+
+}
+
+
+
+/* ================================= */
+/*         PARTE FINAL               */
+/* ================================= */
+
+.productos-final {
+
+    text-align: center;
+
+    margin-top: 80px;
+
+    padding: 60px 30px;
+
+    background-color: #245638;
+
+    border-radius: 8px;
+
+}
+
+
+.productos-final h2 {
+
+    color: #f5b400;
+
+    font-size: 40px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.productos-final p {
+
+    color: white;
+
+    margin-bottom: 25px;
+
+}
+
+
+.boton-ver-promociones {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: #f5b400;
+
+    color: #202020;
+
+    padding: 15px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-ver-promociones:hover {
+
+    background-color: #c52b20;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* ================================= */
+/*           RESPONSIVE              */
+/* ================================= */
+
+@media (max-width: 900px) {
+
+    .productos-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .productos-encabezado {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .pagina-productos {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .productos-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .producto-imagen {
+
+        height: 260px;
+
+    }
+
+}

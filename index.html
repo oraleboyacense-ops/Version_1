@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Órale Boyacá</title>
+
+
+    <!-- TIPOGRAFÍAS -->
+    
+    <!-- Titulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Subtitulo -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Rye&display=swap" rel="stylesheet">
+     
+    <!-- Descripción -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+    <!-- ICONOS FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <!--LOGO-->
+    <link rel="icon" type="image/jpg" href="img/logo.jpg">
+
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================= -->
+    <!--              NAVBAR               -->
+    <!-- ================================= -->
+
+    <header class="navbar">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <img src="img/logo.jpg"
+                alt="Logo Órale Boyacá">
+
+        </a>
+
+
+
+        <!-- MENÚ -->
+
+        <nav class="menu">
+
+            <a href="index.html"
+                class="activo">
+
+                INICIO
+
+            </a>
+
+
+            <a href="promociones.html">
+
+                PROMOCIONES
+
+            </a>
+
+
+            <a href="acercade.html">
+
+                ACERCA DE
+
+            </a>
+
+
+            <a href="ubicacion.html">
+
+                UBICACIÓN
+
+            </a>
+
+        </nav>
+
+
+
+        <!-- CARRITO -->
+
+        <a href="carrito.html"
+            class="icono-carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">
+                0
+            </span>
+
+        </a>
+
+
+    </header>
+
+<!-- ================================= -->
+<!--             BANNER                -->
+<!-- ================================= -->
+
+<section class="banner"> 
+ 
+    <img  
+        src="img/banner orale.jpg"  
+        alt="Banner Órale Boyacá" 
+        class="banner-imagen" 
+    > 
+ 
+    <div class="banner-boton"> 
+        <a href="productos.html" class="boton-principal"> 
+            Ver productos 
+        </a> 
+    </div> 
+ 
+</section>
+
+
+    <!-- ================================= -->
+    <!--       PRODUCTOS DESTACADOS        -->
+    <!-- ================================= -->
+
+    <section class="productos"
+        id="productos">
+
+
+        <h2 class="Subtitulo">
+
+            PRODUCTOS DESTACADOS
+
+        </h2>
+
+
+
+        <div class="productos-contenedor">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+
+                    <img src="img/tacos.jpg"
+                        alt="Tacos">
+
+                </div>
+
+
+                <h3 class="Descripción">
+
+                    TACOS
+
+                </h3>
+
+
+                <p class="precio">
+
+                    $14.900
+
+                </p>
+
+
+                <button class="agregar-carrito"
+                    data-producto="Tacos"
+                    data-precio="14900"
+                    data-imagen="img/tacos.jpg">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                 AGREGAR
+
+                </button>
+
+
+            </article>
+
+
+
+            <!-- PRODUCTO 2 -->
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+
+                    <img src="img/doriloco.jpg"
+                        alt="Dorilocos">
+
+                </div>
+
+
+                <h3 class="Descripción">
+
+                    DORILOCOS
+
+                </h3>
+
+
+                <p class="precio">
+
+                    $28.900
+
+                </p>
+
+                <button class="agregar-carrito"
+                    data-producto="Dorilocos"
+                    data-precio="28900"
+                    data-imagen="img/doriloco.jpg">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    AGREGAR
+
+                </button>
+
+            </article>
+
+
+
+            <!-- PRODUCTO 3 -->
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+
+                    <img src="img/arepa rellena.jpg"
+                        alt="Arepa rellena">
+
+                </div>
+
+
+                <h3 class="Descripción">
+
+                    AREPA RELLENA
+
+                </h3>
+
+
+                <p class="precio">
+
+                    $24.900
+
+                </p>
+                <button class="agregar-carrito"
+                    data-producto="Arepa Rellena"
+                    data-precio="24900"
+                    data-imagen="img/arepa rellena.jpg">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    AGREGAR
+
+                </button>
+
+            </article>
+
+
+
+            <!-- PRODUCTO 4 -->
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+
+                    <img src="img/agua de jamaica.jpg"
+                        alt="Agua de Jamaica">
+
+                </div>
+
+
+                <h3 class="Descripción">
+
+                    AGUA DE JAMAICA
+
+                </h3>
+
+
+                <p class="precio">
+
+                    $5.000
+
+                </p>
+
+                <button class="agregar-carrito"
+                    data-producto="Agua de Jamaica"
+                    data-precio="5000"
+                    data-imagen="img/agua de jamaica.jpg">
+
+                <i class="fa-solid fa-cart-plus"></i>
+
+                AGREGAR
+
+                </button>
+
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!--             RESEÑAS               -->
+    <!-- ================================= -->
+
+    <section class="resenas">
+
+
+        <h2 class="Subtitulo">
+
+            LO QUE DICEN DE NOSOTROS
+
+        </h2>
+
+
+
+        <div class="resenas-contenedor">
+
+
+            <!-- RESEÑA 1 -->
+
+            <article class="resena">
+
+
+                <div class="estrellas">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+
+                <p class="Descripción">
+
+                    Los tacos están demasiado buenos.
+                    El sabor es diferente y delicioso.
+
+                </p>
+
+
+                <span>
+
+                    - María G.
+
+                </span>
+
+
+            </article>
+
+
+
+            <!-- RESEÑA 2 -->
+
+            <article class="resena">
+
+
+                <div class="estrellas">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+
+                <p class="Descripción">
+
+                    Una experiencia diferente y deliciosa.
+                    Me encantó la mezcla de sabores.
+
+                </p>
+
+
+                <span>
+
+                    - Juan P.
+
+                </span>
+
+
+            </article>
+
+
+
+            <!-- RESEÑA 3 -->
+
+            <article class="resena">
+
+
+                <div class="estrellas">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+
+                <p class="Descripción">
+
+                    La atención es increíble
+                    y la comida tiene un sabor único.
+
+                </p>
+
+
+                <span>
+
+                    - Sofía R.
+
+                </span>
+
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!--              REDES                -->
+    <!-- ================================= -->
+
+    <section class="redes">
+
+
+        <p class="Subtitulo">
+
+            SÍGUENOS EN NUESTRAS REDES
+
+        </p>
+
+
+        <div class="iconos-redes">
+
+
+            <a href="https://www.instagram.com/orale.boyaca?igsi=MWgzMTN6MGYzMTVwOA==">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <a href="https://wa.me/c/573143683987">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+
+            <a href="https://www.facebook.com/share/1c4xvZRHbF/">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://www.tiktok.com/@rale.boyac?_r=1&_t=ZS-990EOIFW05Y">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

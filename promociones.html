@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Promociones | Órale Boyacá</title>
+
+
+    <!-- TIPOGRAFÍAS -->
+
+    <!-- Titulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Subtitulo -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Rye&display=swap" rel="stylesheet">
+     
+    <!-- Descripción -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="/css/style.css">
+
+    <!--LOGO-->
+    <link rel="icon" type="image/jpg" href="img/logo.jpg">
+
+</head>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================= -->
+    <!--              NAVBAR               -->
+    <!-- ================================= -->
+
+    <header class="navbar">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+            class="logo">
+
+            <img src="img/logo.jpg"
+                alt="Logo Órale Boyacá">
+
+        </a>
+
+
+
+        <!-- MENÚ -->
+
+        <nav class="menu">
+
+            <a href="index.html">
+
+                INICIO
+
+            </a>
+
+
+            <a href="promociones.html"
+                class="activo">
+
+                PROMOCIONES
+
+            </a>
+
+
+            <a href="acercade.html">
+
+                ACERCA DE
+
+            </a>
+
+
+            <a href="ubicacion.html">
+
+                UBICACIÓN
+
+            </a>
+
+        </nav>
+
+
+
+        <!-- CARRITO -->
+
+        <a href="carrito.html"
+            class="icono-carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">
+                0
+            </span>
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- ================================= -->
+    <!--      ENCABEZADO PROMOCIONES       -->
+    <!-- ================================= -->
+
+    <section class="encabezado-promociones">
+
+
+        <div class="decoracion decoracion-izquierda">
+
+            <i class="fa-solid fa-pepper-hot"></i>
+
+        </div>
+
+
+        <div class="titulo-promociones">
+
+            <h1 class="Titulo">
+
+                PROMOCIONES ESPECIALES
+
+            </h1>
+
+
+            <p class="Descripción">
+
+                Aprovecha nuestras ofertas
+                por tiempo limitado
+
+            </p>
+
+        </div>
+
+
+        <div class="decoracion decoracion-derecha">
+
+            <i class="fa-solid fa-pepper-hot"></i>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!--         TARJETAS PROMOS           -->
+    <!-- ================================= -->
+
+    <main class="seccion-promociones">
+
+
+        <div class="grid-promociones">
+
+
+            <!-- ========================= -->
+            <!--      PROMOCIÓN 1          -->
+            <!-- ========================= -->
+
+            <article class="tarjeta-promo promo-tacos">
+
+
+                <img src="img/tacos 2x1.jpg"
+                    alt="Promoción viernes de tacos">
+
+
+                <div class="contenido-promo">
+
+
+                    <span class="etiqueta-promo">
+
+                        SOLO LOS VIERNES
+
+                    </span>
+
+
+                    <h2 class="Titulo">
+
+                        VIERNES DE TACOS
+
+                    </h2>
+
+
+                    <div class="precio-destacado">
+
+                        2x1
+
+                    </div>
+
+
+                    <p class="Descripción">
+
+                        Disfruta tus tacos favoritos
+                        y comparte el sabor.
+
+                    </p>
+
+
+                    <button class="boton-promo agregar-carrito"
+                        data-producto="Promoción viernes de tacos"
+                        data-precio="14900"
+                        data-imagen="img/tacos 2x1.jpg">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    AGREGAR AL CARRITO
+
+                    </button>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ========================= -->
+            <!--      PROMOCIÓN 2          -->
+            <!-- ========================= -->
+
+            <article class="tarjeta-promo promo-combo">
+
+
+                <img src="img/combo orale.jpg"
+                    alt="Combo Órale">
+
+
+                <div class="contenido-promo">
+
+
+                    <span class="etiqueta-promo">
+
+                        COMBO ESPECIAL
+
+                    </span>
+
+
+                    <h2 class="Titulo">
+
+                        COMBO ÓRALE
+
+                    </h2>
+
+
+                    <p class="descripcion-combo">
+
+                        1 Taco + 1 Agua de
+                        Horchata
+
+                    </p>
+
+
+                    <div class="precio-destacado precio-normal">
+
+                        $18.900
+
+                    </div>
+
+
+                    <button class="boton-promo agregar-carrito"
+                        data-producto="Combo Órale"
+                        data-precio="18900"
+                        data-imagen="img/combo orale.jpg">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    AGREGAR AL CARRITO
+
+                    </button>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ========================= -->
+            <!--      PROMOCIÓN 3          -->
+            <!-- ========================= -->
+
+            <article class="tarjeta-promo promo-hora">
+
+
+                <img src="img/hora loca.jpg"
+                    alt="Promoción Hora Loca">
+
+
+                <div class="contenido-promo">
+
+
+                    <span class="etiqueta-promo">
+
+                        PROMOCIÓN ESPECIAL
+
+                    </span>
+
+
+                    <h2 class="Titulo">
+
+                        HORA LOCA
+
+                    </h2>
+
+
+                    <p class="descripcion-combo">
+
+                        Dorilocos + Agua
+                        de Jamaica
+
+                    </p>
+
+
+                    <div class="precio-destacado precio-normal">
+
+                        $30.900
+
+                    </div>
+
+
+                    <button class="boton-promo agregar-carrito"
+                        data-producto="Hora Loca"
+                        data-precio="30900"
+                        data-imagen="img/hora loca.jpg">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    AGREGAR AL CARRITO
+
+                    </button>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ========================= -->
+            <!--      PROMOCIÓN 4          -->
+            <!-- ========================= -->
+
+            <article class="tarjeta-promo promo-arepa">
+
+
+                <img src="img/arepa lover.jpg"
+                    alt="Promoción Arepa Lover">
+
+
+                <div class="contenido-promo">
+
+
+                    <span class="etiqueta-promo">
+
+                        PARA LOS AMANTES DEL SABOR
+
+                    </span>
+
+
+                    <h2 class="Titulo">
+
+                        AREPA LOVER
+
+                    </h2>
+
+
+                    <p class="descripcion-combo">
+
+                        Arepa rellena +
+                        Michelada
+
+                    </p>
+
+
+                    <div class="precio-destacado precio-normal">
+
+                        $36.900
+
+                    </div>
+
+
+                    <button class="boton-promo agregar-carrito"
+                        data-producto="Arepa Lover"
+                        data-precio="36900"
+                        data-imagen="img/arepa lover.jpg">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                AGREGAR AL CARRITO
+
+                    </button>
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- ================================= -->
+    <!--        MENSAJE DE PROMOCIÓN       -->
+    <!-- ================================= -->
+
+    <section class="mensaje-promociones">
+
+
+        <i class="fa-solid fa-fire"></i>
+
+
+        <p class="Titulo">
+
+            ¡APROVECHA EL SABOR!
+
+        </p>
+
+
+        <span class="Descripción">
+
+            Nuestras promociones pueden cambiar,
+            así que no te quedes sin probarlas.
+
+        </span>
+
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!--              REDES                -->
+    <!-- ================================= -->
+
+    <section class="redes">
+
+
+        <p class="Subtitulo">
+
+            SÍGUENOS EN NUESTRAS REDES
+
+        </p>
+
+
+        <div class="iconos-redes">
+
+
+            <a href="https://www.instagram.com/orale.boyaca?igsi=MWgzMTN6MGYzMTVwOA=="
+                aria-label="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <a href="https://wa.me/c/573143683987"
+                aria-label="WhatsApp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+
+            <a href="https://www.facebook.com/share/1c4xvZRHbF/"
+                aria-label="Facebook">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://www.tiktok.com/@rale.boyac?_r=1&_t=ZS-990EOIFW05Y">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
